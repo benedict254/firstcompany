@@ -1,0 +1,11 @@
+{% extends 'web1/base.html' %}
+
+{% block content %}
+
+{% for p in prod %}
+<p>{{p.p_name}}</p><br>
+<p>{{p.p_color}}</p><br>
+<img src="{{p.p_image.url}}" alt="" width="750px">
+<p>{{p.p_content}}</p><br>
+{% endfor %}
+{% endblock %}
